@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.input-groupe>input:focus+label,
+.input-groupe>input:valid+label {
+  transform: translateY(-50%);
+  background-image: linear-gradient(to top, #99f6e4, #2dd4bf);
+}
+
+.doIt {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* 
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
